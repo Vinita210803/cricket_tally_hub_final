@@ -95,6 +95,11 @@ function noBallClick()
     // }
 }
 
+// function bClick()
+// {
+//     var bye = prompt("Hello Umpire" , "Enter Run Here")
+// }
+
 function ballClick()
 {
     clickBall=clickBall+1;
