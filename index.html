@@ -32,13 +32,6 @@
                 Overs - <span class="total-overs"></span>
             </div>
         </section>
-        <!-- <p class="lasttenball">Runs of last 10 Balls</p>
-        <section class="lasttenballs">
-            {lasttennumbers.length === 0?(<p>Enter first run...</p>):
-                (<div>{lasttennumbers.join(',')}
-                      {console.log(lasttennumbers)}
-            </div>)}
-        </section> -->
         <section id="runs">
             <div class="run">
                 <input type="button" id="run0" onclick="run0Click()" value="0" class="button" >
@@ -47,14 +40,12 @@
                 <input type="button" id="run3" onclick="run3Click()" value="3" class="button" >
                 <input type="button" id="run4" onclick="run4Click()" value="4" class="button" >
                 <input type="button" id="run6" onclick="run6Click()" value="6" class="button" >
-                <!-- <input type="button" id="b/lb" onclick="blbClick()" value="B/LB" class="button" > -->
                 <input type="button" id="whiteBall" onclick="wideBallClick()" value="Wide ball" class="button" >
                 <input type="button" id="noBall" onclick="noBallClick()" value="no ball" class="button" >
                 <input type="button" id="wickets" onclick="wicketClick()" value="wicket" class="button" >
-                <input type="button" id="b/lb" onclick="bClick()" value="Bye" class="button" > 
-                <input type="button" id="b/lb" onclick="lbClick()" value="Leg Bye" class="button" >
-                <input type="button" id="b/lb" onclick="declareClick()" value="Declare" class="button" >
-                <!-- <input type="button" value="Undo" class="button" onclick="Undo()" > -->
+                <input type="button" id="bye" onclick="bClick()" value="Bye" class="button" > 
+                <input type="button" id="legbye" onclick="lbClick()" value="Leg Bye" class="button" >
+                <input type="button" id="declare" onclick="declareClick()" value="Declare" class="button" >
             </div>
         </section>
     </main>
