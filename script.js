@@ -94,7 +94,9 @@ function noBallClick()
     document.querySelector('.total-clickRuns').textContent = clickRuns;
     clickBall=clickBall-1;
     clickOvers = clickOvers - 0.1;
+    if(clickWickets>0){
     clickWickets=clickWickets-1;
+    }
     document.getElementById("wickets").value="runout";
 }
 
@@ -124,7 +126,7 @@ function update() {
 }
 
 function Undo() {
-    if (history.length>1){
+    if (history.length>0){
         history.pop();
         const previousState = history[history.length-1];
         clickRuns = previousState.clickRuns
