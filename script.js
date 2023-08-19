@@ -102,14 +102,14 @@ function noBallClick()
     clickRuns=clickRuns+1;
     alert("click corresponding runs obtained")
     document.querySelector('.total-clickRuns').textContent = clickRuns;
-    if(clickBall>0){
-    clickBall=clickBall-1;
-    clickOvers = clickOvers - 0.1;
-    }
+    // if(clickBall>0){
+    // clickBall=clickBall-1;
+    // clickOvers = clickOvers - 0.1;
+    // }
     
-    if(clickWickets>0){
-    clickWickets=clickWickets-1;
-    }
+    // if(clickWickets>0){
+    // clickWickets=clickWickets-1;
+    // }
     document.getElementById("wickets").value="runout";
     // console.log("executing noballclick",history,clickRuns,clickOvers,clickWickets,clickBall)
     saveData()
