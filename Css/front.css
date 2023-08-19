@@ -1,0 +1,93 @@
+*{
+    background-color: #fff;
+    margin: 0;
+    padding:0;
+}
+body{
+    background-image: url("../Images/cricket.jpg");
+    background-repeat: no-repeat;
+    background-size:100vh 100%;
+    background-position: left;
+    /* background-size: cover; */
+    height:100vh;
+    zoom:110%;
+}
+/* #header {
+    background-color:yellowgreen; 
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+#header .top{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-left: 10%;
+    border: black solid 1px;
+}
+#header .top img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+#header ul{
+    display: flex;
+    padding: 20px 10px;
+    justify-content: space-between;
+   
+    border: black solid 1px;
+}
+#header ul li{
+    padding: 0px 80px;
+    list-style: none;
+    background-color: #000;
+    color:#fff;
+}
+#header ul li a {
+    text-decoration: none;
+    color: #000;
+}
+#header ul li a:hover {
+    background-color: #fff;
+    border-radius: 3px;
+    color:#000;
+} */
+#front{
+    /* background-color: black; */
+    max-width: 60%;
+    margin:auto auto;
+    border:solid 5px orange;
+    align-items: center;
+    /* position:absolute; */
+    position: relative;
+    background-color: #fff;
+    transform: translateY(50%);
+    display: flex;
+    flex-direction: column;
+}
+#front h1{
+    /* font-size: 4.5rem; */
+    padding:10px 20px;
+    background-color: #fff;
+    /* background-color:#172317; */
+    color:black;
+    text-align: center;
+}
+#front .createteam{
+    max-width: 100%;
+    margin:auto auto;
+    padding:10px 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    color:#000;
+    font-weight: bold;
+    border-radius: 10px;
+}
+ /* /* #center{
+ border:solid 3px black;
+ background-image: url("./logo.jpg");
+ background-size: cover;
+ height:200px;
+ background-attachment: fixed;
+} */
