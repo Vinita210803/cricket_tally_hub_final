@@ -98,6 +98,8 @@ function noBallClick()
     clickWickets=clickWickets-1;
     }
     document.getElementById("wickets").value="runout";
+    saveData()
+    update()
 }
 
 function ballClick()
