@@ -34,8 +34,8 @@ function update1(){
     console.log(document)
     document.querySelector('.total-clickRuns1').textContent = clickRuns;
     document.querySelector('.total-clickWickets1').textContent = clickWickets;
-    // document.querySelector('.total-clickBalls1').textContent = clickBall;
-    // document.querySelector('.total-overs').textContent = clickOvers.toFixed(1);
+    document.querySelector('.total-clickBalls1').textContent = clickBall;
+    document.querySelector('.total-overs1').textContent = clickOvers.toFixed(1);
     
 }
 function clearSavedData() {
