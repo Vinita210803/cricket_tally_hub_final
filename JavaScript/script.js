@@ -206,3 +206,33 @@ function Overs(){
 
 
 
+
+// Add this code at the end of your "script.js" file
+
+// Check if localStorage is supported by the browser
+if (typeof(Storage) !== "undefined") {
+    // Load saved data from localStorage when the page loads
+    // if (localStorage.getItem("savedData")) {
+    //     const savedData = JSON.parse(localStorage.getItem("savedData"));
+    //     clickRuns = savedData.clickRuns;
+    //     clickWickets = savedData.clickWickets;
+    //     clickBall = savedData.clickBall;
+    //     clickOvers = savedData.clickOvers;
+    //     update();
+    // }
+
+    // Function to save data to localStorage
+    function saveData() {
+        const state = {
+            clickRuns,
+            clickBall,
+            clickWickets,
+            clickOvers
+        }
+        history.push(state);
+        localStorage.setItem("savedData", JSON.stringify(state));
+    }
+
+    // Function to clear saved data from localStorage
+    
+}
