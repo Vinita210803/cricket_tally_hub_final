@@ -8,12 +8,14 @@
     <script src="../JavaScript/script.js"></script>
     <script src="../JavaScript/bye.js"></script>
     <script src="../JavaScript/legbye.js"></script>
-    <!-- <script src="../JavaScript/declare.js"></script> -->
+    <script src="../JavaScript/declare.js"></script>
 </head>
 <body>
     <header id="header">
-        <h1>SCORECARD</h1>
         <input type="button" id="undo" onclick="Undo()" value="Undo" class="button" >
+        <h1>SCORECARD</h1>
+        <!-- <input type="button" id="declare" onclick="declareClick()" value="Declare" class="button" > -->
+        <a href="../Html/declare.html"><input type="button" id="declare" onclick="declareClick()" value="Declare" class="button" ></a>
     </header>
     <main>
         <section id="scorecard">
@@ -46,7 +48,7 @@
                 <input type="button" id="wickets" onclick="wicketClick()" value="wicket" class="button" >
                 <input type="button" id="bye" onclick="bClick()" value="Bye" class="button" > 
                 <input type="button" id="legbye" onclick="lbClick()" value="Leg Bye" class="button" >
-                <a href="../Html/declare.html"><input type="button" id="declare"  value="Declare" class="button" ></a>
+                <a href="../Html/declare.html"><input type="button" id="declare" onclick="declareClick()" value="Declare" class="button" ></a>
             </div>
         </section>
     </main>
