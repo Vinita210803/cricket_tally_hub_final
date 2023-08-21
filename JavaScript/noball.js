@@ -14,7 +14,7 @@ function noBallClick()
             // // console.log("executing noballclick",history,clickRuns,clickOvers,clickWickets,clickBall)
             // saveData()
             // update()
-    var bye = prompt("Hello Umpire This is no ball" , "Enter the run for free hit")
+    var bye = prompt("This is no ball if the free hit si no ball then press 9 or if wide enter 7 " , "Enter the run for free hit")
     switch(parseInt(bye))
     {
         case 0: 
@@ -34,6 +34,18 @@ function noBallClick()
         break;
         case 6: 
         clickRuns = clickRuns+7;
+        break;
+        case 7: 
+        clickRuns = clickRuns+1;
+        clickBall = clickBall-1
+        clickOvers = clickOvers-0.1
+        noBallClick();
+        break;
+        case 9: 
+        clickRuns = clickRuns+1;
+        clickBall = clickBall-1
+        clickOvers = clickOvers-0.1
+        noBallClick();
         break;
         default :
         // clickRuns=clickRuns+1;
