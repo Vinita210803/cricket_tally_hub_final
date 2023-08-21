@@ -9,7 +9,7 @@ function run0Click()
     Overs()
     saveData()
     update()
-    document.getElementById("wickets").value = "wicket"
+    // document.getElementById("wickets").value = "wicket"
 }
 
 function run1Click()
@@ -22,63 +22,63 @@ function run1Click()
     Overs()
     saveData()
     update()
-    document.getElementById("wickets").value = "wicket"
+    // document.getElementById("wickets").value = "wicket"
 }
 
 function run2Click()
 {
     clickRuns=clickRuns+2;
-    document.querySelector('.total-clickRuns').textContent = clickRuns;
+    // document.querySelector('.total-clickRuns').textContent = clickRuns;
     // console.log("executing run2click",history,clickRuns,clickOvers,clickWickets,clickBall)
 
     ballClick()
     Overs()
     saveData()
     update()
-    document.getElementById("wickets").value = "wicket"
+    // document.getElementById("wickets").value = "wicket"
 }
 
 function run3Click()
 {
     clickRuns=clickRuns+3;
-    document.querySelector('.total-clickRuns').textContent = clickRuns;
+    // document.querySelector('.total-clickRuns').textContent = clickRuns;
     // console.log("executing run3click",history,clickRuns,clickOvers,clickWickets,clickBall)
     ballClick()
     Overs()
     saveData()
     update()
-    document.getElementById("wickets").value = "wicket"
+    // document.getElementById("wickets").value = "wicket"
 }
 
 function run4Click()
 {
     clickRuns=clickRuns+4;
-    document.querySelector('.total-clickRuns').textContent = clickRuns;
+    // document.querySelector('.total-clickRuns').textContent = clickRuns;
     // console.log("executing run4click",history,clickRuns,clickOvers,clickWickets,clickBall)
     ballClick()
     Overs()
     saveData()
     update()
-    document.getElementById("wickets").value = "wicket"
+    // document.getElementById("wickets").value = "wicket"
 }
 
 function run6Click()
 {
     clickRuns=clickRuns+6;
-    document.querySelector('.total-clickRuns').textContent = clickRuns;
+    // document.querySelector('.total-clickRuns').textContent = clickRuns;
     // console.log("executing run6click",history,clickRuns,clickOvers,clickWickets,clickBall)
     ballClick()
     Overs()
     saveData()
     update()
-    document.getElementById("wickets").value = "wicket"
+    // document.getElementById("wickets").value = "wicket"  
 }
 
 function wideBallClick()
 {
     clickRuns=clickRuns+1;
-    document.querySelector('.total-clickRuns').textContent = clickRuns;
-    document.getElementById("wickets").value = "wicket"
+    // document.querySelector('.total-clickRuns').textContent = clickRuns;
+    // document.getElementById("wickets").value = "wicket"
     // console.log("executing wideballclick",history,clickRuns,clickOvers,clickWickets,clickBall)
     saveData()
     update()
@@ -88,7 +88,7 @@ function wicketClick()
 {
     if(clickWickets<10){
     clickWickets=clickWickets+1;
-    document.querySelector('.total-clickWickets').textContent = clickWickets;
+    // document.querySelector('.total-clickWickets').textContent = clickWickets;
     // console.log("executing wicketclick",history,clickRuns,clickOvers,clickWickets,clickBall)
     ballClick()
     Overs()
@@ -200,7 +200,7 @@ function Overs(){
         clickOvers =parseInt(clickOvers)+1
         clickBall = 0
     }
-    document.querySelector('.total-overs').textContent = clickOvers.toFixed(1);
+    // document.querySelector('.total-overs').textContent = clickOvers.toFixed(1);
     // console.log("executing overs",history,clickRuns,clickOvers,clickWickets,clickBall)
 }
 
