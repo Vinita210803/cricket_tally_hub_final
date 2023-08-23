@@ -1,96 +1,68 @@
 let clickRuns = 0, clickWickets = 0, clickBall = 0, clickWhiteBall=0, countBall=0, clickOvers=0,over=0
-
 function run0Click()
 {
     clickRuns=clickRuns+0;
-    // document.querySelector('.total-clickRuns').textContent = clickRuns;
-    // console.log("executing run0click",history,clickRuns,clickOvers,clickWickets,clickBall)
     ballClick()
     Overs()
     saveData()
     update()
-    // document.getElementById("wickets").value = "wicket"
 }
-
 function run1Click()
 {
-    clickRuns=clickRuns+1;
-    // document.querySelector('.total-clickRuns').textContent = clickRuns;
-    // console.log("executing run1click",history,clickRuns,clickOvers,clickWickets,clickBall)
-
+    clickRuns=clickRuns+1;    
     ballClick()
     Overs()
     saveData()
     update()
     // document.getElementById("wickets").value = "wicket"
 }
-
 function run2Click()
 {
-    clickRuns=clickRuns+2;
-    // document.querySelector('.total-clickRuns').textContent = clickRuns;
-    // console.log("executing run2click",history,clickRuns,clickOvers,clickWickets,clickBall)
-
+    clickRuns=clickRuns+2;   
     ballClick()
     Overs()
     saveData()
     update()
-    // document.getElementById("wickets").value = "wicket"
 }
 
 function run3Click()
 {
     clickRuns=clickRuns+3;
-    // document.querySelector('.total-clickRuns').textContent = clickRuns;
-    // console.log("executing run3click",history,clickRuns,clickOvers,clickWickets,clickBall)
     ballClick()
     Overs()
     saveData()
     update()
-    // document.getElementById("wickets").value = "wicket"
 }
 
 function run4Click()
 {
     clickRuns=clickRuns+4;
-    // document.querySelector('.total-clickRuns').textContent = clickRuns;
-    // console.log("executing run4click",history,clickRuns,clickOvers,clickWickets,clickBall)
     ballClick()
     Overs()
     saveData()
     update()
-    // document.getElementById("wickets").value = "wicket"
 }
 function run5Click()
 {
     clickRuns=clickRuns+5;
-    // document.querySelector('.total-clickRuns').textContent = clickRuns;
-    // console.log("executing run4click",history,clickRuns,clickOvers,clickWickets,clickBall)
     ballClick()
     Overs()
     saveData()
     update()
-    // document.getElementById("wickets").value = "wicket"
 }
 
 function run6Click()
 {
     clickRuns=clickRuns+6;
-    // document.querySelector('.total-clickRuns').textContent = clickRuns;
-    // console.log("executing run6click",history,clickRuns,clickOvers,clickWickets,clickBall)
     ballClick()
     Overs()
     saveData()
     update()
-    // document.getElementById("wickets").value = "wicket"  
 }
 
 function wideBallClick()
 {
     clickRuns=clickRuns+1;
-    // document.querySelector('.total-clickRuns').textContent = clickRuns;
-    // document.getElementById("wickets").value = "wicket"
-    // console.log("executing wideballclick",history,clickRuns,clickOvers,clickWickets,clickBall)
     saveData()
     update()
 }
@@ -98,73 +70,18 @@ function wideBallClick()
 function wicketClick()
 {
     if(clickWickets<10){
-    clickWickets=clickWickets+1;
-    // document.querySelector('.total-clickWickets').textContent = clickWickets;
-    // console.log("executing wicketclick",history,clickRuns,clickOvers,clickWickets,clickBall)
-    ballClick()
-    Overs()
-    saveData()
-    update()
+        clickWickets=clickWickets+1;
+        ballClick()
+        Overs()
+        saveData()
+        update()
     }
 }
 
-// function noBallClick()
-// {
-//     clickRuns=clickRuns+1;
-//     // alert("click corresponding runs obtained")
-//     // // document.querySelector('.total-clickRuns').textContent = clickRuns;
-//     // // if(clickBall>0){
-//     // // clickBall=clickBall-1;
-//     // // clickOvers = clickOvers - 0.1;
-//     // // }
-    
-//     // // if(clickWickets>0){
-//     // // clickWickets=clickWickets-1;
-//     // // }
-//     // // document.getElementById("wickets").value="runout";
-//     // // console.log("executing noballclick",history,clickRuns,clickOvers,clickWickets,clickBall)
-//     // saveData()
-//     // update()
-//     var bye = prompt("Hello Umpire This is bye" , "1")
-//     switch(parseInt(bye))
-//     {
-//         case 0: 
-//         clickRuns = clickRuns+0;
-//         break;
-//         case 1: 
-//         clickRuns = clickRuns+1;
-//         break;
-//         case 2: 
-//         clickRuns = clickRuns+2;
-//         break;
-//         case 3: 
-//         clickRuns = clickRuns+3;
-//         break;
-//         case 4: 
-//         clickRuns = clickRuns+4;
-//         break;
-//         case 6: 
-//         clickRuns = clickRuns+6;
-//         break;
-//         default :
-//         alert("Enter valid runs")
-//         // clickBall = clickBall-1
-//         // clickOvers = clickOvers-0.1
-        
-//     }
-//     document.querySelector('.total-clickRuns').textContent = clickRuns;
-//     ballClick()
-//     Overs()
-//     saveData()
-//     update()
-
-// }
 
 function ballClick()
 {
     clickBall=clickBall+1;
-    // document.querySelector('.total-clickBalls').textContent = clickBall;
-    // console.log("executing ballclick",history,clickRuns,clickOvers,clickWickets,clickBall)
 }
 
 let history = []
@@ -172,7 +89,6 @@ function saveData() {
     const state = {
         clickRuns,
         clickBall,
-        // clickWhiteBall,
         clickWickets,
         clickOvers
     }
@@ -184,8 +100,7 @@ function update() {
     document.querySelector('.total-clickWickets').textContent = clickWickets;
     document.querySelector('.total-clickBalls').textContent = clickBall;
     document.querySelector('.total-overs').textContent = clickOvers.toFixed(1);
-    // console.log("executing update",history,clickRuns,clickOvers,clickWickets,clickBall)
-
+    
 }
 
 function Undo() {
@@ -195,9 +110,7 @@ function Undo() {
         clickRuns = previousState.clickRuns
         clickBall = previousState.clickBall
         clickWickets = previousState.clickWickets
-        // clickWhiteBall = previousState.clickWhiteBall
         clickOvers = previousState.clickOvers
-        // console.log("executing undo",clickRuns,clickOvers,clickWickets,clickBall)
         update();
     }
 }
@@ -211,39 +124,39 @@ function Overs(){
         clickOvers =parseInt(clickOvers)+1
         clickBall = 0
     }
-    // document.querySelector('.total-overs').textContent = clickOvers.toFixed(1);
-    // console.log("executing overs",history,clickRuns,clickOvers,clickWickets,clickBall)
 }
 
 
 
-
-// Add this code at the end of your "script.js" file
 
 // Check if localStorage is supported by the browser
 if (typeof(Storage) !== "undefined") {
-    // Load saved data from localStorage when the page loads
-    // if (localStorage.getItem("savedData")) {
-    //     const savedData = JSON.parse(localStorage.getItem("savedData"));
-    //     clickRuns = savedData.clickRuns;
-    //     clickWickets = savedData.clickWickets;
-    //     clickBall = savedData.clickBall;
-    //     clickOvers = savedData.clickOvers;
-    //     update();
-    // }
-
-    // Function to save data to localStorage
-    function saveData() {
-        const state = {
-            clickRuns,
-            clickBall,
-            clickWickets,
-            clickOvers
+        // Function to save data to localStorage
+        function saveData() {
+            const state = {
+                clickRuns,
+                clickBall,
+                clickWickets,
+                clickOvers
+            }
+            history.push(state);
+            localStorage.setItem("savedData", JSON.stringify(state));
         }
-        history.push(state);
-        localStorage.setItem("savedData", JSON.stringify(state));
+        
+        // Function to clear saved data from localStorage
+        
     }
-
-    // Function to clear saved data from localStorage
     
-}
+    const battingTeam = localStorage.getItem("hostname")
+    document.getElementById("batting").textContent = battingTeam
+    const batting = document.getElementById("batting");
+    const storedHostName = localStorage.getItem("hostname");
+    if (storedHostName) {
+        batting.textContent = storedHostName;
+    }
+    
+    const balling = document.getElementById("balling");
+    const storedVistorName = localStorage.getItem("visitorname");
+    if(storedVistorName) {
+       balling.textContent = storedVistorName;
+    }
