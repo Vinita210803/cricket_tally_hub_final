@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Score Card</title>
-    <link rel="stylesheet" href="../Css/style.css">
+    <!-- <link rel="stylesheet" href="../Css/style.css"> -->
+    <link rel="stylesheet" href="../Css/styles.css">
     <script src="../JavaScript/script.js"></script>
     <script src="../JavaScript/bye.js"></script>
     <script src="../JavaScript/legbye.js"></script>
@@ -13,7 +14,7 @@
 </head>
 <body>
     <header id="header">
-        <input type="button" id="undo" onclick="Undo()" value="Undo" class="button" >
+        <a ><input type="button" id="undo" onclick="Undo()" value="Undo" class="button" ></a>
         <h1>SCORECARD</h1>
         <!-- <input type="button" id="declare" onclick="declareClick()" value="Declare" class="button" > -->
         <a href="../Html/declare.html"><input type="button" id="declare" onclick="declareClick()" value="Declare" class="button" ></a>
@@ -43,12 +44,14 @@
                 <input type="button" id="run2" onclick="run2Click()" value="2" class="button" >
                 <input type="button" id="run3" onclick="run3Click()" value="3" class="button" >
                 <input type="button" id="run4" onclick="run4Click()" value="4" class="button" >
+                <input type="button" id="run5" onclick="run5Click()" value="5" class="button" >
                 <input type="button" id="run6" onclick="run6Click()" value="6" class="button" >
                 <input type="button" id="whiteBall" onclick="wideBallClick()" value="Wide ball" class="button" >
                 <input type="button" id="noBall" onclick="noBallClick()" value="no ball" class="button" >
                 <input type="button" id="wickets" onclick="wicketClick()" value="wicket" class="button" >
                 <!-- <input type="button" id="bye" onclick="bClick()" value="Bye" class="button" >  -->
                 <input type="button" id="legbye" onclick="lbClick()" value="Bye/Leg Bye" class="button" >
+                <input type="button" id="inning" onclick="inning()" value="Inning" class="button" >
                 <!-- <a href="../Html/declare.html"><input type="button" id="declare" onclick="declareClick()" value="Declare" class="button" ></a> -->
             </div>
         </section>

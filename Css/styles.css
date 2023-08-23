@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    max-width:100%;
+    font-size: 16px;
+}
+/* header */
+#header{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    padding:5px;
+}
+#header h1{
+    color: aliceblue;
+    font-size:larger;
+}
+#header #undo,#header #declare{
+    background-color: #fff;
+    padding:2px;
+    border-radius: 5px;
+}
+/* scorecard */
+#scorecard{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-bottom: 17vh;
+}
+/* buttons */
+#runs .run{
+    display:grid;
+    grid-template-columns: auto auto auto;
+}
+#runs .run .button{
+    width: 33vw;
+    height: 10vh;
+}
+/* footer */
+footer{
+    text-align: center;
+    background-color: rgb(53, 52, 52);
+    color:#fff;
+    padding:5px;
+    width:100vw;
+    bottom: 0;
+    position: fixed;
+}
+
+
+

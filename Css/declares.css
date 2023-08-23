@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#declareform{
+    max-width: 60vw;
+    margin:auto;
+    background-color: antiquewhite;
+    padding:40px;
+    margin-top:10vh;
+    border:solid 5px orange;
+}
+/* .declareform{
+    margin:40px 20px;
+} */
+#declareform .declareform div{
+    display: flex;
+}
+#declareform .declareform div span{
+    font-size:x-large;
+}

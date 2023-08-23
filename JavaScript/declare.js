@@ -9,6 +9,8 @@ let clickRuns = 0, clickWickets = 0, clickBall = 0, clickWhiteBall=0, countBall=
 // declare.js
 
 // Check if localStorage is supported by the browser
+alert("are you sure you want to declare?")
+
 document.addEventListener('DOMContentLoaded', function() {
     // Your code here
     if (typeof(Storage) !== "undefined") {

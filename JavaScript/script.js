@@ -61,6 +61,17 @@ function run4Click()
     update()
     // document.getElementById("wickets").value = "wicket"
 }
+function run5Click()
+{
+    clickRuns=clickRuns+5;
+    // document.querySelector('.total-clickRuns').textContent = clickRuns;
+    // console.log("executing run4click",history,clickRuns,clickOvers,clickWickets,clickBall)
+    ballClick()
+    Overs()
+    saveData()
+    update()
+    // document.getElementById("wickets").value = "wicket"
+}
 
 function run6Click()
 {
