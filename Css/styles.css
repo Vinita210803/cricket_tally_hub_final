@@ -30,19 +30,21 @@ body{
     display: flex;
     flex-direction: column;
     align-items:center;
-    margin-bottom: 17vh;
+    margin-bottom: 23vh;
 }
 /* buttons */
 #runs .run{
     display:grid;
     grid-template-columns: auto auto auto;
+    bottom: 0;
+    position: fixed;
 }
 #runs .run .button{
     width: 33vw;
     height: 10vh;
 }
 /* footer */
-footer{
+/* footer{
     text-align: center;
     background-color: rgb(53, 52, 52);
     color:#fff;
@@ -50,7 +52,7 @@ footer{
     width:100vw;
     bottom: 0;
     position: fixed;
-}
+} */
 
 
 
