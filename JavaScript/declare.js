@@ -1,21 +1,4 @@
-let clickRuns = 0, clickWickets = 0, clickBall = 0, clickWhiteBall=0, countBall=0, clickOvers=0,over=0
-// function declareClick(){
-//     document.querySelector('.total-clickRuns').textContent = clickRuns;
-//     document.querySelector('.total-clickWickets').textContent = clickWickets;
-//     document.querySelector('.total-clickBalls').textContent = clickBall;
-//     document.querySelector('.total-overs').textContent = clickOvers.toFixed(1);
-// }
-
-// declare.js
-
-// Check if localStorage is supported by the browser
-
-// function declareClick(){
-//     let dec = prompt("type yes for submit otherwise no" , "yes ")
-//     switch(dec)
-//     {
-//         case 'yes' :
-                // alert("are you sure you want to declare?")
+clickRuns = 0, clickWickets = 0, clickBall = 0, clickWhiteBall=0, countBall=0, clickOvers=0,over=0
                 
                 document.addEventListener('DOMContentLoaded', function() {
                     // Your code here
@@ -37,33 +20,17 @@ let clickRuns = 0, clickWickets = 0, clickBall = 0, clickWhiteBall=0, countBall=
                     }
                 });
                 
+                // clickRuns = maxScore;
                 function update1(){
                     console.log("update1"+clickRuns,clickWickets,clickBall,clickOvers)
+                    if(document.getElementById("inning").value === "endInning"){
+
+                        console.log(maxScore)
+                    }
                     console.log(document)
                     document.querySelector('.total-clickRuns1').textContent = clickRuns;
                     document.querySelector('.total-clickWickets1').textContent = clickWickets;
                     document.querySelector('.total-clickBalls1').textContent = clickBall;
                     document.querySelector('.total-overs1').textContent = clickOvers.toFixed(1);
                 }    
-//             break;
-//             default :
 
-//     }
-
-                
-// }
-
-// function clearSavedData() {
-//     localStorage.removeItem("savedData");
-// }
-
-// function saveData() {
-//     const state = {
-//         clickRuns,
-//         clickBall,
-//         clickWickets,
-//         clickOvers
-//     }
-//     history.push(state);
-//     localStorage.setItem("savedData", JSON.stringify(state));
-// }

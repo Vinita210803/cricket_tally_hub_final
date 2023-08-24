@@ -1,42 +1,29 @@
-// document.addEventListener('DOMContentLoaded', inning)
-
-function inning()
-{
-    localStorage.getItem("savedData")
-    // document.getElementById("inning").textContent = firstScore
-    // console.log(firstScore)
-    
-    // clickRuns = savedData.clickRuns
-    // console.log(clickRuns)
-
-    // const firstScore = clickRuns
-    // console.log(firstScore)
-    // document.getElementById("inning").value = "End Inning"
-    //     window.location.href = 'index.html'
-    //     // console.log(firstScore)
-    //     // if(value =="End Inning"){
-    //          const secondScore = clickRuns
-    //          console.log(secondScore)
-        // }
-        // console.log(savedData)
-        document.addEventListener('DOMContentLoaded', function() {
-            // Your code here
-            if (typeof(Storage) !== "undefined") {
-                // Load saved data from localStorage when the page loads
-                console.log("abcccc");
-                if (localStorage.getItem("savedData")) {
-                    console.log("localstorage")
-                    const savedData = JSON.parse(localStorage.getItem("savedData"));
-                    console.log("savedata",savedData)
-                    clickRuns = savedData.clickRuns;
-                    clickWickets = savedData.clickWickets;
-                    clickBall = savedData.clickBall;
-                    clickOvers = savedData.clickOvers;
-                    console.log("clickruns"+clickRuns,clickWickets,clickBall,clickOvers)
-                    update1();
-}
-
-                
-            }
+let firstScore = 0,secondScore = 0,maxScore = 0;
+function inning(){
+    if(document.getElementById("inning").value === "inning"){
+        const previousState = history[history.length-1];
+        firstScore = previousState.clickRuns
+        console.log(firstScore)
+        document.getElementById("inning").value = "endInning"
+        clickRuns = 0, clickWickets = 0, clickBall = 0, clickWhiteBall=0, countBall=0, clickOvers=0,over=0
+        document.querySelector('.total-clickRuns').textContent = clickRuns;
+        document.querySelector('.total-clickWickets').textContent = clickWickets;
+        document.querySelector('.total-overs').textContent = clickOvers.toFixed(1);
+        document.querySelector('.total-clickBalls').textContent = clickBall;
+    }
+    else{
+        const previousState = history[history.length-1];
+        secondScore = previousState.clickRuns
+        console.log(secondScore)
+        if(firstScore > secondScore){
+            maxScore = firstScore
+            console.log("more score is " , maxScore)
         }
-    )}
+        else{
+            maxScore = secondScore
+            console.log("more score is ", maxScore)
+        }
+        // window.location.href = 'declare.html'
+    }
+    
+}

@@ -14,7 +14,6 @@ function run1Click()
     Overs()
     saveData()
     update()
-    // document.getElementById("wickets").value = "wicket"
 }
 function run2Click()
 {
@@ -100,11 +99,24 @@ function update() {
     document.querySelector('.total-clickWickets').textContent = clickWickets;
     document.querySelector('.total-clickBalls').textContent = clickBall;
     document.querySelector('.total-overs').textContent = clickOvers.toFixed(1);
-    
 }
 
+// const battingTeam = localStorage.getItem("hostname")
+// document.getElementById("batting").textContent = battingTeam
+// const batting = document.getElementById("batting");
+// const storedHostName = localStorage.getItem("hostname");
+// if (storedHostName) {
+//     batting.textContent = storedHostName;
+// }
+
+// const balling = document.getElementById("balling");
+// const storedVistorName = localStorage.getItem("visitorname");
+// if(storedVistorName) {
+//    balling.textContent = storedVistorName;
+// }
+
 function Undo() {
-    if (history.length>1){
+    if (history.length>0){
         history.pop();
         const previousState = history[history.length-1];
         clickRuns = previousState.clickRuns
@@ -115,7 +127,6 @@ function Undo() {
     }
 }
 
-
 function Overs(){
     if(clickBall<6){
         clickOvers = clickOvers + 0.1
@@ -125,9 +136,6 @@ function Overs(){
         clickBall = 0
     }
 }
-
-
-
 
 // Check if localStorage is supported by the browser
 if (typeof(Storage) !== "undefined") {
@@ -142,21 +150,6 @@ if (typeof(Storage) !== "undefined") {
             history.push(state);
             localStorage.setItem("savedData", JSON.stringify(state));
         }
-        
         // Function to clear saved data from localStorage
-        
     }
     
-    const battingTeam = localStorage.getItem("hostname")
-    document.getElementById("batting").textContent = battingTeam
-    const batting = document.getElementById("batting");
-    const storedHostName = localStorage.getItem("hostname");
-    if (storedHostName) {
-        batting.textContent = storedHostName;
-    }
-    
-    const balling = document.getElementById("balling");
-    const storedVistorName = localStorage.getItem("visitorname");
-    if(storedVistorName) {
-       balling.textContent = storedVistorName;
-    }
